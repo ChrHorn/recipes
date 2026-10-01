@@ -31,8 +31,11 @@
 				"stb"
 			],
 			"depends": [
+				"binary(ddcutil)",
+				"binary(git)",
+				"binary(powerprofilesctl)",
+				"binary(upower)",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"power-profiles-daemon",
 				"soname(libEGL.so.1(x86_64))",
 				"soname(libGLESv2.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
@@ -73,7 +76,7 @@
 				"soname(libwireplumber-0.5.so.0(x86_64))",
 				"soname(libxkbcommon.so.0(x86_64))",
 				"soname(libxml2.so.16(x86_64))",
-				"upower"
+				"sound-theme-freedesktop"
 			],
 			"files": [
 				"/usr/bin/noctalia",
@@ -185,6 +188,6 @@
 		}
 	},
 	"source-name": "noctalia",
-	"source-release": "8",
-	"source-version": "5.2.0"
+	"source-release": "9",
+	"source-version": "5.2.1"
 }
