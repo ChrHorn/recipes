@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : debugedit
-version     : "5.3"
-release     : 2
+version     : "5.4"
+release     : 3
 upstreams   :
-    - https://sourceware.org/ftp/debugedit/5.3/debugedit-5.3.tar.xz : 3b8c6396fe235e0270c9b9c0d244cfd0e86c284fc27e820acc58360e7cfa08c2
+    - https://sourceware.org/ftp/debugedit/5.4/debugedit-5.4.tar.xz : 00e1d74d31df9012913975b76ab0d864f0e2569d29e31271317161187803813a
 homepage    : https://sourceware.org/debugedit
 license     : LGPL-2.1-or-later
 summary     : Tool to mangle source locations in .debug files
@@ -20,8 +20,6 @@ builddeps   :
     - pkgconfig(libelf)
     - pkgconfig(libxxhash)
 setup       : |
-    %patch %(pkgdir)/elflint.patch
-
     %configure \
         --disable-inlined-xxhash
 build       : |
