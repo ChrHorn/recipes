@@ -26,6 +26,7 @@
 				"/usr/bin/miriway-run",
 				"/usr/bin/miriway-run-shell",
 				"/usr/bin/miriway-session",
+				"/usr/bin/miriway-setup",
 				"/usr/bin/miriway-shell",
 				"/usr/bin/miriway-terminal",
 				"/usr/bin/miriway-unsnap",
@@ -44,6 +45,7 @@
 				"binary(miriway-run)",
 				"binary(miriway-run-shell)",
 				"binary(miriway-session)",
+				"binary(miriway-setup)",
 				"binary(miriway-shell)",
 				"binary(miriway-terminal)",
 				"binary(miriway-unsnap)"
@@ -51,6 +53,6 @@
 		}
 	},
 	"source-name": "miriway",
-	"source-release": "1",
-	"source-version": "26.08.1"
+	"source-release": "2",
+	"source-version": "26.10"
 }

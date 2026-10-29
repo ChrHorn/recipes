@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
   id: 375500
   rss: https://github.com/Miriway/Miriway/tags.atom
-# No known CPE, checked 2025-03-10
 security:
+  # Last checked 2026-10-29
   cpe: ~
