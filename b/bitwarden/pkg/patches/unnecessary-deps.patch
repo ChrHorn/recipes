@@ -9,7 +9,7 @@ Subject: [PATCH] Unnecessary deps
  2 files changed, 6 deletions(-)
 
 diff --git a/apps/desktop/desktop_native/napi/package.json b/apps/desktop/desktop_native/napi/package.json
-index c9fdd90e9e..67e9f026fb 100644
+index 3b10388..67e9f02 100644
 --- a/apps/desktop/desktop_native/napi/package.json
 +++ b/apps/desktop/desktop_native/napi/package.json
 @@ -8,9 +8,6 @@
@@ -23,16 +23,16 @@ index c9fdd90e9e..67e9f026fb 100644
      "binaryName": "desktop_napi",
      "targets": [
 diff --git a/apps/desktop/electron-builder.json b/apps/desktop/electron-builder.json
-index ee7ecfa321..53d61467f6 100644
+index 6975a78..b9b6e9d 100644
 --- a/apps/desktop/electron-builder.json
 +++ b/apps/desktop/electron-builder.json
-@@ -13,9 +13,6 @@
+@@ -12,9 +12,6 @@
      "output": "dist",
      "app": "build"
    },
 -  "afterSign": "scripts/after-sign.js",
 -  "afterPack": "scripts/after-pack.js",
 -  "beforePack": "scripts/before-pack.js",
+   "appxManifestCreated": "scripts/appx-manifest-created.js",
    "files": [
      "!node_modules/@bitwarden/desktop-napi/scripts",
-     "!node_modules/@bitwarden/desktop-napi/src",

@@ -1,10 +1,11 @@
-# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
   id: 179174
   rss: https://github.com/bitwarden/clients/releases.atom
 security:
+  # Last checked 2026-10-29
   cpe:
   - vendor: bitwarden
     product: bitwarden
