@@ -2838,6 +2838,7 @@
 			"depends": [
 				"qemu-common",
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libusb-1.0.so.0(x86_64))"
 			],
 			"files": [
@@ -5311,6 +5312,6 @@
 		}
 	},
 	"source-name": "qemu",
-	"source-release": "44",
-	"source-version": "11.1.2"
+	"source-release": "45",
+	"source-version": "11.1.3"
 }
