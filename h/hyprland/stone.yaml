@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : hyprland
-version     : "0.56.2"
-release     : 15
+version     : "0.57.0"
+release     : 16
 homepage    : https://hypr.land/
 upstreams   :
-    - https://github.com/hyprwm/Hyprland/releases/download/v0.56.2/source-v0.56.2.tar.gz : 03ad3f5ef152ff44116ffd56fcf808486211ecabf4f0ba567108ee746ba5cd2e
+    - https://github.com/hyprwm/Hyprland/releases/download/v0.57.0/source-v0.57.0.tar.gz : 82d006ba9264fe67266c7d583c16f1a6c64d51424dbdc472c3e9c9d5ddfcd559
 summary     : Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
 description : |
     Hyprland is a 100% independent, dynamic tiling Wayland compositor that doesn't sacrifice on its looks. It provides the latest Wayland features, is highly customizable, has all the eyecandy, the most powerful plugins, easy IPC, much more QoL stuff than other compositors and more...
@@ -16,6 +16,7 @@ builddeps   :
     - cmake(glaze)
     - cmake(glslang)
     - pkgconfig(aquamarine)
+    - pkgconfig(cairo)
     - pkgconfig(gbm)
     - pkgconfig(gio-2.0)
     - pkgconfig(hyprcursor)
@@ -26,6 +27,7 @@ builddeps   :
     - pkgconfig(hyprwayland-scanner)
     - pkgconfig(hyprwire)
     - pkgconfig(lcms2)
+    - pkgconfig(libcanberra)
     - pkgconfig(libdrm)
     - pkgconfig(libeis-1.0)
     - pkgconfig(libinput)
@@ -34,12 +36,15 @@ builddeps   :
     - pkgconfig(opengl)
     - pkgconfig(pango)
     - pkgconfig(pangocairo)
+    - pkgconfig(pixman-1)
     - pkgconfig(re2)
     - pkgconfig(readline)
+    - pkgconfig(sdbus-c++)
     - pkgconfig(tomlplusplus)
     - pkgconfig(uuid)
     - pkgconfig(wayland-protocols)
     - pkgconfig(wayland-scanner)
+    - pkgconfig(wayland-server)
     - pkgconfig(xcb-errors)
     - pkgconfig(xcb-icccm)
     - pkgconfig(xcursor)
