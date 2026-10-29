@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2024 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : appstream
-version     : "1.2.1"
-release     : 22
+version     : "1.2.2"
+release     : 23
 homepage    : https://www.freedesktop.org/wiki/Distributions/AppStream/
 upstreams   :
-    - https://www.freedesktop.org/software/appstream/releases/AppStream-1.2.1.tar.xz : 7df664fd3ad3b1640c6a0ff77fa84f9fabe264111bf1fe8f5df3444d6d4caaca
+    - https://www.freedesktop.org/software/appstream/releases/AppStream-1.2.2.tar.xz : 2f4f7c29095b905b4347829e39971ef8134d2d5aba663383268bab3bfeab45a9
 summary     : Tools and libraries to work with AppStream metadata
 description : |
     AppStream is a cross-distribution effort for enhancing the way we interact with the software repositories provided by (Linux) distributions by standardizing software component metadata.
