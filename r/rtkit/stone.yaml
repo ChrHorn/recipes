@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : rtkit
 version     : "0.14"
-release     : 5
+release     : 6
 homepage    : https://gitlab.freedesktop.org/pipewire/rtkit
 upstreams   :
     - https://gitlab.freedesktop.org/pipewire/rtkit/-/archive/v0.14/rtkit-v0.14.tar.gz : 55dd379b11f52b81655e2dc676de9d602d050cb0beb18ef01f0f65569f0a5e59
@@ -20,6 +20,8 @@ builddeps   :
     - pkgconfig(polkit-gobject-1)
     - pkgconfig(systemd)
 setup       : |
+    %patch %(pkgdir)/logind-bool-type-0.14.patch
+
     %meson \
         -Dinstalled_tests=false
 build       : |

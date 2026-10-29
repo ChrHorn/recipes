@@ -1,0 +1,38 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Reilly Brogan <reilly@reillybrogan.com>
+Date: Thu, 29 Oct 2026 16:24:07 -0500
+Subject: [PATCH] daemon: Fix stack corruption when handling logind suspend
+ signals
+
+dbus_message_get_args() writes a dbus_bool_t (four bytes) for a
+DBUS_TYPE_BOOLEAN argument, but the PrepareForSleep handler stores it in a
+plain C bool, which is one byte. The three surplus zero bytes land in the
+adjacent stack slot, which on some compilers is the saved %rbx of
+dbus_logind_handler() -- the register holding the caller's DBusConnection
+pointer. The low three bytes of the connection pointer are then zeroed, and
+the CONNECTION_LOCK() that dbus_connection_dispatch() performs directly
+after the filter returns dereferences the resulting page-aligned address,
+killing the daemon on every suspend.
+
+Declare it as dbus_bool_t, matching the type the API expects (and the one
+already used for the polkit reply in this file).
+
+Origin: vendor
+Forwarded: no
+Last-Update: 2026-10-29
+---
+ rtkit-daemon.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/rtkit-daemon.c b/rtkit-daemon.c
+--- a/rtkit-daemon.c
++++ b/rtkit-daemon.c
+@@ -1708,7 +1708,7 @@ static DBusHandlerResult dbus_logind_handler(DBusConnection *c, DBusMessage *m,
+ static DBusHandlerResult dbus_logind_handler(DBusConnection *c, DBusMessage *m, void *userdata) {
+         if (dbus_message_is_signal(m, "org.freedesktop.login1.Manager", "PrepareForSleep")) {
+                 DBusError error;
+-                bool active;
++                dbus_bool_t active;
+ 
+                 dbus_error_init(&error);
+                 if (dbus_message_get_args(m, &error, DBUS_TYPE_BOOLEAN, &active, DBUS_TYPE_INVALID)) {
