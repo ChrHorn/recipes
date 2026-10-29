@@ -202,6 +202,7 @@
 				"/usr/share/xkeyboard-config-2/symbols/bd",
 				"/usr/share/xkeyboard-config-2/symbols/be",
 				"/usr/share/xkeyboard-config-2/symbols/bg",
+				"/usr/share/xkeyboard-config-2/symbols/blackberry_vndr/key2/us",
 				"/usr/share/xkeyboard-config-2/symbols/bqn",
 				"/usr/share/xkeyboard-config-2/symbols/br",
 				"/usr/share/xkeyboard-config-2/symbols/brai",
@@ -295,6 +296,7 @@
 				"/usr/share/xkeyboard-config-2/symbols/macintosh_vndr/us",
 				"/usr/share/xkeyboard-config-2/symbols/md",
 				"/usr/share/xkeyboard-config-2/symbols/me",
+				"/usr/share/xkeyboard-config-2/symbols/meta",
 				"/usr/share/xkeyboard-config-2/symbols/mk",
 				"/usr/share/xkeyboard-config-2/symbols/ml",
 				"/usr/share/xkeyboard-config-2/symbols/mm",
@@ -421,6 +423,6 @@
 		}
 	},
 	"source-name": "xkeyboard-config",
-	"source-release": "9",
-	"source-version": "2.48"
+	"source-release": "10",
+	"source-version": "2.49"
 }
