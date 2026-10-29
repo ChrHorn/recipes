@@ -11,7 +11,7 @@
 			],
 			"files": [
 				"/usr/lib/libhyphen.so.0",
-				"/usr/lib/libhyphen.so.0.4.0"
+				"/usr/lib/libhyphen.so.0.4.1"
 			],
 			"name": "hyphen",
 			"provides": [
@@ -28,11 +28,13 @@
 			"files": [
 				"/usr/bin/substrings.pl",
 				"/usr/include/hyphen.h",
-				"/usr/lib/libhyphen.so"
+				"/usr/lib/libhyphen.so",
+				"/usr/lib/pkgconfig/hyphen.pc"
 			],
 			"name": "hyphen-devel",
 			"provides": [
-				"binary(substrings.pl)"
+				"binary(substrings.pl)",
+				"pkgconfig(hyphen)"
 			]
 		},
 		"hyphen-en": {
@@ -71,6 +73,6 @@
 		}
 	},
 	"source-name": "hyphen",
-	"source-release": "3",
-	"source-version": "2.8.9"
+	"source-release": "4",
+	"source-version": "2.8.10"
 }
