@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2024 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libsoup
-version     : "3.8.0"
-release     : 13
+version     : "3.8.1"
+release     : 14
 homepage    : https://gitlab.gnome.org/GNOME/libsoup
 upstreams   :
-    - https://download.gnome.org/sources/libsoup/3.8/libsoup-3.8.0.tar.xz : bbf08fa3e03a88c31a3d27a0d87cb422e9490f2d08e149211103df6d638a2238
+    - https://download.gnome.org/sources/libsoup/3.8/libsoup-3.8.1.tar.xz : 5013dcef9136f6f861e6529fca578af50c1f52a39219027fb5aff652d1371a04
 summary     : libsoup is an HTTP client/server library for GNOME.
 description : |
     libsoup is an HTTP client/server library for GNOME. It uses GObjects and the glib main loop, to integrate well with GNOME applications.

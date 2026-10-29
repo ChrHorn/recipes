@@ -41,7 +41,7 @@
 			"files": [
 				"/usr/lib/girepository-1.0/Soup-3.0.typelib",
 				"/usr/lib/libsoup-3.0.so.0",
-				"/usr/lib/libsoup-3.0.so.0.8.0",
+				"/usr/lib/libsoup-3.0.so.0.8.1",
 				"/usr/share/locale/ab/LC_MESSAGES/libsoup-3.0.mo",
 				"/usr/share/locale/an/LC_MESSAGES/libsoup-3.0.mo",
 				"/usr/share/locale/as/LC_MESSAGES/libsoup-3.0.mo",
@@ -949,6 +949,6 @@
 		}
 	},
 	"source-name": "libsoup",
-	"source-release": "13",
-	"source-version": "3.8.0"
+	"source-release": "14",
+	"source-version": "3.8.1"
 }
