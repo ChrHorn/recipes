@@ -5,4 +5,5 @@ releases:
   id: 376147
   rss: https://github.com/jovanlanik/gtklock/releases.atom
 security:
-  cpe: ~ # No CPE found, last checked (2026-09-29)
+  # Last checked 2026-10-28
+  cpe: ~

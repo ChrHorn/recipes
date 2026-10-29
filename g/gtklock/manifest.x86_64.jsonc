@@ -28,8 +28,14 @@
 				"/usr/share/defaults/pam.d/gtklock",
 				"/usr/share/locale/cs/LC_MESSAGES/gtklock.mo",
 				"/usr/share/locale/de/LC_MESSAGES/gtklock.mo",
+				"/usr/share/locale/es/LC_MESSAGES/gtklock.mo",
+				"/usr/share/locale/ka/LC_MESSAGES/gtklock.mo",
+				"/usr/share/locale/pt_BR/LC_MESSAGES/gtklock.mo",
+				"/usr/share/locale/ro/LC_MESSAGES/gtklock.mo",
+				"/usr/share/locale/ru/LC_MESSAGES/gtklock.mo",
 				"/usr/share/locale/sr/LC_MESSAGES/gtklock.mo",
 				"/usr/share/locale/sr@latin/LC_MESSAGES/gtklock.mo",
+				"/usr/share/locale/zh_CN/LC_MESSAGES/gtklock.mo",
 				"/usr/share/man/man1/gtklock.1"
 			],
 			"name": "gtklock",
@@ -39,6 +45,6 @@
 		}
 	},
 	"source-name": "gtklock",
-	"source-release": "1",
-	"source-version": "4.0.0"
+	"source-release": "2",
+	"source-version": "5.0.0"
 }
