@@ -5,5 +5,7 @@ releases:
   id: 7927
   rss: https://invent.kde.org/qt/qt/qtdeclarative/-/tags?format=atom
 security:
-  # Last checked 2025-01-21
-  cpe: ~
+  # Last checked 2026-10-29
+  cpe:
+  - vendor: qt
+    product: qtdeclarative
