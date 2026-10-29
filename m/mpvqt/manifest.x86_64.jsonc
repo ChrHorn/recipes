@@ -18,12 +18,12 @@
 				"soname(libstdc++.so.6(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libMpvQt.so.1.2.0",
-				"/usr/lib/libMpvQt.so.3"
+				"/usr/lib/libMpvQt.so.1.2.1",
+				"/usr/lib/libMpvQt.so.4"
 			],
 			"name": "mpvqt",
 			"provides": [
-				"soname(libMpvQt.so.3(x86_64))"
+				"soname(libMpvQt.so.4(x86_64))"
 			]
 		},
 		"mpvqt-devel": {
@@ -59,6 +59,6 @@
 		}
 	},
 	"source-name": "mpvqt",
-	"source-release": "5",
-	"source-version": "1.2.0"
+	"source-release": "6",
+	"source-version": "1.2.1"
 }
