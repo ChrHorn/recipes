@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : xdg-desktop-portal-hyprland
-version     : "1.4.1"
-release     : 6
+version     : "1.5.0"
+release     : 7
 upstreams   :
-    - https://github.com/hyprwm/xdg-desktop-portal-hyprland/archive/refs/tags/v1.4.1.tar.gz : 3652c14f63a9666acea2c841e196782dbc0f74ea5b4783622dd04a32f08b709f
+    - https://github.com/hyprwm/xdg-desktop-portal-hyprland/archive/refs/tags/v1.5.0.tar.gz : 8f9eddad706b0bbca2dc24f9894e07969ec5aed163249d6eac3932cfaf38e6a9
 homepage    : https://github.com/hyprwm/xdg-desktop-portal-hyprland
 license     : BSD-3-Clause
 summary     : xdg-desktop-portal backend for hyprland
 description : |
     xdg-desktop-portal backend for hyprland
 builddeps   :
-    - pkgconfig(Qt6Core)
     - pkgconfig(gbm)
     - pkgconfig(hyprland-protocols)
     - pkgconfig(hyprlang)
+    - pkgconfig(hyprtoolkit)
     - pkgconfig(hyprutils)
     - pkgconfig(hyprwayland-scanner)
     - pkgconfig(libdrm)
