@@ -2,6 +2,25 @@
 {
 	"manifest-version": "0.2",
 	"packages": {
+		"libtcm": {
+			"build-depends": [
+				"pkgconfig(hwloc)"
+			],
+			"depends": [
+				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
+				"soname(libhwloc.so.15(x86_64))",
+				"soname(libstdc++.so.6(x86_64))"
+			],
+			"files": [
+				"/usr/lib/libtcm.so.1",
+				"/usr/lib/libtcm.so.1.6.0"
+			],
+			"name": "libtcm",
+			"provides": [
+				"soname(libtcm.so.1(x86_64))"
+			]
+		},
 		"onetbb": {
 			"build-depends": [
 				"pkgconfig(hwloc)"
@@ -13,11 +32,11 @@
 			],
 			"files": [
 				"/usr/lib/libtbb.so.12",
-				"/usr/lib/libtbb.so.12.19",
+				"/usr/lib/libtbb.so.12.20",
 				"/usr/lib/libtbbmalloc.so.2",
-				"/usr/lib/libtbbmalloc.so.2.19",
+				"/usr/lib/libtbbmalloc.so.2.20",
 				"/usr/lib/libtbbmalloc_proxy.so.2",
-				"/usr/lib/libtbbmalloc_proxy.so.2.19",
+				"/usr/lib/libtbbmalloc_proxy.so.2.20",
 				"/usr/share/doc/TBB/README.md"
 			],
 			"name": "onetbb",
@@ -39,7 +58,7 @@
 			],
 			"files": [
 				"/usr/lib/libtbbbind_2_5.so.3",
-				"/usr/lib/libtbbbind_2_5.so.3.19"
+				"/usr/lib/libtbbbind_2_5.so.3.20"
 			],
 			"name": "onetbb-bind",
 			"provides": [
@@ -51,6 +70,7 @@
 				"pkgconfig(hwloc)"
 			],
 			"depends": [
+				"libtcm",
 				"onetbb",
 				"onetbb-bind"
 			],
@@ -105,6 +125,8 @@
 				"/usr/include/oneapi/tbb/detail/_mutex_common.h",
 				"/usr/include/oneapi/tbb/detail/_namespace_injection.h",
 				"/usr/include/oneapi/tbb/detail/_node_handle.h",
+				"/usr/include/oneapi/tbb/detail/_parallel_partition.h",
+				"/usr/include/oneapi/tbb/detail/_parallel_phase.h",
 				"/usr/include/oneapi/tbb/detail/_pipeline_filters.h",
 				"/usr/include/oneapi/tbb/detail/_pipeline_filters_deduction.h",
 				"/usr/include/oneapi/tbb/detail/_range_common.h",
@@ -203,24 +225,35 @@
 				"/usr/include/tbb/tbbmalloc_proxy.h",
 				"/usr/include/tbb/tick_count.h",
 				"/usr/include/tbb/version.h",
+				"/usr/include/tcm.h",
+				"/usr/include/tcm/detail/_config.h",
+				"/usr/include/tcm/detail/_export.h",
+				"/usr/include/tcm/types.h",
+				"/usr/include/tcm/version.h",
 				"/usr/lib/cmake/TBB/TBBConfig.cmake",
 				"/usr/lib/cmake/TBB/TBBConfigVersion.cmake",
 				"/usr/lib/cmake/TBB/TBBTargets-release.cmake",
 				"/usr/lib/cmake/TBB/TBBTargets.cmake",
+				"/usr/lib/cmake/TCM/TCMConfig.cmake",
+				"/usr/lib/cmake/TCM/TCMConfigVersion.cmake",
+				"/usr/lib/cmake/TCM/TCMTargets-release.cmake",
+				"/usr/lib/cmake/TCM/TCMTargets.cmake",
 				"/usr/lib/libtbb.so",
 				"/usr/lib/libtbbbind_2_5.so",
 				"/usr/lib/libtbbmalloc.so",
 				"/usr/lib/libtbbmalloc_proxy.so",
+				"/usr/lib/libtcm.so",
 				"/usr/lib/pkgconfig/tbb.pc"
 			],
 			"name": "onetbb-devel",
 			"provides": [
 				"cmake(TBB)",
+				"cmake(TCM)",
 				"pkgconfig(tbb)"
 			]
 		}
 	},
 	"source-name": "onetbb",
-	"source-release": "8",
-	"source-version": "2023.1.0"
+	"source-release": "10",
+	"source-version": "2023.2.0"
 }

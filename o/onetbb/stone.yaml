@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 2024 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : onetbb
-version     : "2023.1.0"
-release     : 8
+version     : "2023.2.0"
+release     : 10
 summary     : Thread Building Blocks library
 license     : Apache-2.0 AND BSD-3-Clause
 homepage    : https://uxlfoundation.github.io/oneTBB/
 description : |
     The Threading Building Blocks library abstracts low-level threading details
 upstreams   :
-    - https://github.com/uxlfoundation/oneTBB/archive/refs/tags/v2023.1.0.tar.gz: 191288b52e1e6b17198000b64d77d194bb65e791be46ebc606e9b091781e2070
+    - https://github.com/uxlfoundation/oneTBB/archive/refs/tags/v2023.2.0.tar.gz: 80cb62e62defeee67ea1885a6f72d97ac81404f8fde9cded62fb51524808a30c
 builddeps   :
     - pkgconfig(hwloc)
 setup       : |
@@ -30,6 +30,16 @@ packages    :
         paths:
             - /usr/lib/libtbbbind*.so.*
 
+    - "libtcm":
+        summary: Thread Composability Manager runtime library
+        description: |
+            The Thread Composability Manager (TCM) is a runtime library that allows
+            threading runtimes to manage their own resources and cooperate with
+            each other.
+        paths:
+            - /usr/lib/libtcm.so.1*
+
     - "%(name)-devel":
         rundeps:
+            - libtcm
             - "%(name)-bind"
