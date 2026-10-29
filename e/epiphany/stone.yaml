@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : epiphany
-version     : "51.1"
-release     : 3
+version     : "51.2"
+release     : 4
 upstreams   :
-    - https://download.gnome.org/sources/epiphany/51/epiphany-51.1.tar.xz : beb93b3b86b763092a1175b6e505789b7613071c0dc1ad56cac1979fe879e9dd
+    - https://download.gnome.org/sources/epiphany/51/epiphany-51.2.tar.xz : e45d93483d62beeb26b36b39fe2f8cb5511ffe6ddccc7fedff55b1e3cc0a5c30
 homepage    : https://apps.gnome.org/Epiphany
 license     : GPL-3.0-or-later
 summary     : Web browser for GNOME
@@ -22,8 +22,8 @@ builddeps   :
     - binary(rst2man)
     - pkgconfig(cairo)
     - pkgconfig(gck-2)
-    - pkgconfig(gdk-pixbuf-2.0)
     - pkgconfig(gcr-4)
+    - pkgconfig(gdk-pixbuf-2.0)
     - pkgconfig(gio-2.0)
     - pkgconfig(gio-unix-2.0)
     - pkgconfig(glib-2.0)
@@ -33,8 +33,8 @@ builddeps   :
     - pkgconfig(gtk4)
     - pkgconfig(gtk4-unix-print)
     - pkgconfig(hogweed)
-    - pkgconfig(json-glib-1.0)
     - pkgconfig(iso-codes)
+    - pkgconfig(json-glib-1.0)
     - pkgconfig(libadwaita-1)
     - pkgconfig(libarchive)
     - pkgconfig(libportal-gtk4)
