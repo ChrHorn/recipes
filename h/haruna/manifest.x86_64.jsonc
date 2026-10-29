@@ -49,7 +49,7 @@
 				"soname(libKF6KIOWidgets.so.6(x86_64))",
 				"soname(libKF6Service.so.6(x86_64))",
 				"soname(libKF6WindowSystem.so.6(x86_64))",
-				"soname(libMpvQt.so.3(x86_64))",
+				"soname(libMpvQt.so.4(x86_64))",
 				"soname(libQt6Core.so.6(x86_64))",
 				"soname(libQt6DBus.so.6(x86_64))",
 				"soname(libQt6Gui.so.6(x86_64))",
@@ -127,6 +127,6 @@
 		}
 	},
 	"source-name": "haruna",
-	"source-release": "19",
+	"source-release": "20",
 	"source-version": "1.8.1"
 }
