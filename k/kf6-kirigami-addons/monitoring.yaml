@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
   id: 242933
   rss: https://invent.kde.org/libraries/kirigami-addons/-/tags?format=atom
 security:
-  # No known CPE, last checked 2025-06-11
+  # Last checked 2026-10-29
   cpe: ~
